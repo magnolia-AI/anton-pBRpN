@@ -14,5 +14,14 @@ export default defineConfig({
     port: 5173,
     host: true,
     allowedHosts: true,
+    watch: {
+      usePolling: true,
+    },
   },
+  // Adding specific cacheDir and optimizing options to resolve EXDEV issues in containers
+  cacheDir: 'node_modules/.vite_cache',
+  optimizeDeps: {
+    force: true,
+  }
 })
+
