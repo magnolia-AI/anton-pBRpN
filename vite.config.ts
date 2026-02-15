@@ -19,7 +19,7 @@ export default defineConfig({
     },
   },
   // Adding specific cacheDir and optimizing options to resolve EXDEV issues in containers
-  cacheDir: 'node_modules/.vite_cache',
+  cacheDir: '/tmp/.vite',
   optimizeDeps: {
     force: true,
   }
